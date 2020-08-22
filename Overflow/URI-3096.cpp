@@ -34,10 +34,8 @@ long long findDigits(int n)
 
     // Usei a formula de Kamenetsky pra calcular
     // o numero de digitos
-    double x = ((n * log10(n / M_E) +
-                 log10(2 * M_PI * n) /
-                     2.0));
-
+    double x = ((n * log10(n / M_E) + log10(2 * M_PI * n) / 2.0));
+    
     return floor(x) + 1;
 }
 
