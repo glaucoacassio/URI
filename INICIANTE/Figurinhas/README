@@ -20,9 +20,10 @@ Cada caso de teste contém 2 inteiros F1 (1 ≤ F1 ≤ 1000) e F2 (1 ≤ F2 ≤ 
 que Ricardo e Vicente têm para trocar.
 
 Saída
-Para cada caso de teste de entrada haverá um valor na saída, representando o tamanho máximo da pilha de figurinhas que poderia ser trocada entre dois jogadores.
+Para cada caso de teste de entrada haverá um valor na saída, representando o tamanho máximo da pilha 
+de figurinhas que poderia ser trocada entre dois jogadores.
 
-Exemplo de Entrada	  Exemplo de Saída
+Exemplo de Entrada	 Exemplo de Saída
 3
 8 12                      4
 9 27                      9
