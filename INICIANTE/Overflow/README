@@ -21,7 +21,7 @@ A entrada contém um inteiro N (1 <= N <= 10^8) conforme explicado o problema.
 Saída
 A saída deve conter o número de dígitos de N!.
 
-Input Samples	            Output Samples
+Input Samples	          Output Samples
 5                         3
 
 10                        7
