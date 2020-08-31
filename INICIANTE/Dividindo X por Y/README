@@ -14,7 +14,7 @@ Para cada caso mostre o resultado da divisão com um dígito após o ponto decim
 
 Obs.: Cuide que a divisão entre dois inteiros em algumas linguagens como o C e C++ gera outro inteiro. Utilize cast :)
 
-Exemplo de Entrada	     Exemplo de Saída
+Exemplo de Entrada	    Exemplo de Saída
 3
 3 -2                        -1.5
 -8 0                        divisao impossivel
