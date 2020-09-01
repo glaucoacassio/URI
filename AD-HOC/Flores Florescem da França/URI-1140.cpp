@@ -1,7 +1,6 @@
 #include <iostream>
 #include <cstring>
 #include <cstdio>
-#define fim '*'
 using namespace std;
 
 int main(int argc, char *argv[])
@@ -10,23 +9,22 @@ int main(int argc, char *argv[])
 
 	while (getline(cin, str) && str != "*")
 	{
-      fflush(stdin); //Limpar o buffer
-      bool istautograma = true;
-      for (size_t i = 0; i < str.length(); i++)
-      {
-        size_t pos = str.find(" ", i);
-        if (pos == string::npos)
-          break;
-        if (towlower(str[pos + 1]) != tolower(str[0]))
-        {
-          istautograma = false;
-          break;
-        }
-        i = pos; //atualiza a posicao
-      }
-      
-      if (istautograma) puts("Y");
-      else puts("N");
+	      fflush(stdin); //Limpar o buffer
+	      bool istautograma = true;
+	      for (size_t i = 0; i < str.length(); i++)
+	      {
+			size_t pos = str.find(" ", i);
+			if (pos == string::npos)
+			  break;
+			if (towlower(str[pos + 1]) != tolower(str[0]))
+			{
+			  istautograma = false;
+			  break;
+			}
+			i = pos; //atualiza a posicao
+	      }
+	      if (istautograma) puts("Y");
+	      else puts("N");
 	}
 	return 0;
 }
