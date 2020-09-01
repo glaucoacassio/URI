@@ -34,24 +34,28 @@ typedef vector<ii> vii;
 
 int main()
 {
+	#ifndef ONLINE_JUDGE
+		freopen("in.txt", "r", stdin);
+		freopen("out.txt", "w", stdout);
+	#endif
+	setlocale(LC_ALL, "Portuguese");
 	ios::sync_with_stdio(false);
 	cin.tie(0);
 	int A, D;
 	while(cin >> A >> D && (A || D))
 	{
-	      vi dist_defensor(D), dist_atacante(A);
-	      for (int i = 0; i < A; i++)
-		cin >> dist_atacante[i];
-		
-	      for (int j = 0; j < D; j++)
-		cin >> dist_defensor[j];
-		
-	      sort(dist_atacante.begin(), dist_atacante.end());
-	      sort(dist_defensor.begin(), dist_defensor.end());
-	      //Se ele esta na frente do ultimo jogador ou do penultimo esta impedido 
-	      //Ps.: -> Regra da questao, no futebol de verdade basta ta na frente do ultimo defensor
-	      if (dist_atacante[0] < dist_defensor[0] || dist_atacante[0] < dist_defensor[1]) cout << "Y" << endl;
-	      else cout << "N" << endl; 	
+		vi dist_defensor(D), dist_atacante(A);
+		for (int i = 0; i < A; i++)
+			cin >> dist_atacante[i];
+
+		for (int j = 0; j < D; j++)
+			cin >> dist_defensor[j];
+		//Ordeno pra a menor distancia tanto do atacante como do defensor serem as primeiras
+		sort(dist_atacante.begin(), dist_atacante.end());
+		sort(dist_defensor.begin(), dist_defensor.end());
+		//Se ele esta na frente do penultimo, ta impedido!
+		if (dist_atacante[0] < dist_defensor[1]) cout << "Y" << endl;
+		else cout << "N" << endl; 	
 	}
 	return 0;
 }
