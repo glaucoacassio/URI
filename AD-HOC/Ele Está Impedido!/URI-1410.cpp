@@ -42,14 +42,14 @@ int main()
 	      vi dist_defensor(D), dist_atacante(A);
 	      for (int i = 0; i < A; i++)
 		cin >> dist_atacante[i];
+		
 	      for (int j = 0; j < D; j++)
 		cin >> dist_defensor[j];
+		
 	      sort(dist_atacante.begin(), dist_atacante.end());
 	      sort(dist_defensor.begin(), dist_defensor.end());
-	      //Se ele esta mais proximo do gol que o ultimo jogador ou mais proximo do que o penultimo esta impedido
-	      //A questao que disse isso:
-	      // "Um jogador atacante está impedido se ele está mais próximo da linha do gol do oponente do que o 
-	      // penúltimo adversário."
+	      //Se ele esta na frente do ultimo jogador ou do penultimo esta impedido 
+	      //Ps.: -> Regra da questao, no futebol de verdade basta ta na frente do ultimo defensor
 	      if (dist_atacante[0] < dist_defensor[0] || dist_atacante[0] < dist_defensor[1]) cout << "Y" << endl;
 	      else cout << "N" << endl; 	
 	}
