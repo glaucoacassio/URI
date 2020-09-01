@@ -53,6 +53,7 @@ int main()
 		//Ordeno pra a menor distancia tanto do atacante como do defensor serem as primeiras
 		sort(dist_atacante.begin(), dist_atacante.end());
 		sort(dist_defensor.begin(), dist_defensor.end());
+		
 		//Se ele esta na frente do penultimo, ta impedido!
 		if (dist_atacante[0] < dist_defensor[1]) cout << "Y" << endl;
 		else cout << "N" << endl; 	
