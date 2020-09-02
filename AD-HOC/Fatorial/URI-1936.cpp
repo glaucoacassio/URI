@@ -46,7 +46,7 @@ int main()
 		for (i = 1 ;; i++)
 			if (fat[i] >= n or i > 8)
 				break;
-			(fat[i] <= n) ? n -= ar[i] : n -= ar[i - 1];
+			(fat[i] <= n) ? n -= fat[i] : n -= fat[i - 1];
 			ans++;
 	}
 	cout << ans << endl;
