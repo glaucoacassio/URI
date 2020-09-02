@@ -38,16 +38,15 @@ int main()
 	setlocale(LC_ALL, "Portuguese");
 	ios::sync_with_stdio(false);
 	cin.tie(0);
-	int ar[] = {0, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880};
-	int i, n, s, ans = 0;
+	int fat[] = {1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880};
+	int i, n, ans = 0;
 	cin >> n;
-	s = n;
-	while (s != 0)
+	while (n != 0)
 	{
 		for (i = 1 ;; i++)
-			if (ar[i] >= s or i > 8)
+			if (fat[i] >= n or i > 8)
 				break;
-			(ar[i] <= s) ? s -= ar[i] : s -= ar[i - 1];
+			(fat[i] <= n) ? n -= ar[i] : n -= ar[i - 1];
 			ans++;
 	}
 	cout << ans << endl;
