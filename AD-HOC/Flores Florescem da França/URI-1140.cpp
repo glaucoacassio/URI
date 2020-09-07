@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	      {
 			size_t pos = str.find(" ", i);
 			if (pos == string::npos) break;
-			if (towlower(str[pos + 1]) != tolower(str[0]))
+			if (towlower(str[0]) != tolower(str[pos + 1]))
 			{
 			  istautograma = false;
 			  break;
