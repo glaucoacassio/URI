@@ -9,7 +9,7 @@ int main()
     int n;
     string s;
     
-    while(getline(cin, s))
+    while (getline(cin, s))
     {
         //Retorna um ponteiro pra um array que contem uma sequencia de caracteres representando o valor atual
         n = atoi(s.c_str());
