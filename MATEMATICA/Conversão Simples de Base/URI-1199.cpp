@@ -23,4 +23,5 @@ int main()
         }
         else cout << "0x" << hex << uppercase << n << endl;
     }
+    return 0;
 }
