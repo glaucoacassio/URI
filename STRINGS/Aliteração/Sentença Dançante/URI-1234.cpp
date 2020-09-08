@@ -1,6 +1,7 @@
 /*
 Questao facil:
-Ela pedia que intercalasse entre uma letra e outra sendo que a primeira letra de casa frase seria maiscula e a outra minuscula, ate o fim da frase dada.
+Ela pedia que intercalasse entre uma letra e outra sendo que a primeira letra de cada frase seria maiscula e a outra minuscula, ate o fim da frase dada.
+Pega caractere por caractere, quando for uma letra e seu indice for par voce transforma pra maiscula, caso contrario transforma pra minuscula.  
 Eu apenas segui os exemplos triviais da entrada e confiando num AC levei um Error Presentation. Porque nao me atentei a uma coisa, numa string pode vim
 assim:  
 ma na mmmmmmmmmm         tthuuhjnjnYTTGUEGFUhggu   Y
@@ -17,7 +18,6 @@ int main(int argc, char const *argv[])
 {
     string str;
     char c;
-
     while (getline(cin, str))
     {
         if (cin.eof()) break;
