@@ -25,7 +25,7 @@ Para cada caso de teste, se não é possível alcançar seu amigo, imprima uma l
 Caso contrário, imprima uma linha contendo o tempo decorrido, em segundos, até que você alcance seu amigo. 
 Arredonde e imprima a resposta com exatamente duas casas decimais.
 
-Exemplo de Entrada	        Exemplo de Saída
+Exemplo de Entrada	     Exemplo de Saída
 1 2 1                       1.00
 2 3 4                       impossivel
 
